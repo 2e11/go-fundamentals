@@ -3,10 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var first, second string
+	var first, second int
 	fmt.Scan(&first)
 	fmt.Scan(&second)
-	// Print one greeting per line, first name first.
-	fmt.Println("Hello,", first)
-	fmt.Println("Hello,", second)
+
+	//TODO: line 1 - print the sum of the two integers.
+	fmt.Println(first + second)
+
+	//TODO: line 2 - print the result of subtracting the second from the first.
+	fmt.Println(first - second)
+
+	//TODO: line 3 - print wether the two interges are equal.
+	fmt.Println(first == second)
 }
