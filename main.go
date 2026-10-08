@@ -3,16 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var first, second int
-	fmt.Scan(&first)
-	fmt.Scan(&second)
+	var a, b int
+	fmt.Scan(&a)
+	fmt.Scan(&b)
 
-	//TODO: line 1 - print the sum of the two integers.
-	fmt.Println(first + second)
+	//TODO: keep only the whole part of dividing a by b.
+	quotient := a / b
+	//TODO: what is left over after that division.
+	remainder := a % b
 
-	//TODO: line 2 - print the result of subtracting the second from the first.
-	fmt.Println(first - second)
-
-	//TODO: line 3 - print wether the two interges are equal.
-	fmt.Println(first == second)
+	fmt.Println(quotient)
+	fmt.Println(remainder)
 }
