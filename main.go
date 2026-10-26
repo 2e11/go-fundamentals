@@ -1,16 +1,25 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
-// square should return n multiplied by itself.
-func square(n int) int {
-	return n * n
-}
-
 func main() {
-	var n int
-	fmt.Scan(&n)
-	fmt.Println(square(n))
+	r := bufio.NewReader(os.Stdin)
+	line, _ := r.ReadString('\n')
+	line = strings.TrimRight(line, "\r\n")
+
+	val, err := strconv.Atoi(line)
+	result := "ok"
+	if err != nil {
+		result = "bad"
+		fmt.Println(result)
+		return
+	}
+
+	fmt.Println(result, val)
 }
