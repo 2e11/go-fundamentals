@@ -4,12 +4,13 @@ import (
 	"fmt"
 )
 
+// square should return n multiplied by itself.
+func square(n int) int {
+	return n * n
+}
+
 func main() {
 	var n int
 	fmt.Scan(&n)
-	sum := 0
-	for k := 1; k <= n; k++ {
-		sum += k
-	}
-	fmt.Println(sum)
+	fmt.Println(square(n))
 }
